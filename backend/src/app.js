@@ -17,6 +17,11 @@ app.use(express.json());
 // Enable CORS
 app.use(cors());
 
+// Test route
+app.get('/', (req, res) => {
+  res.send('API Running Successfully');
+});
+
 // Set security headers
 app.use(helmet());
 
